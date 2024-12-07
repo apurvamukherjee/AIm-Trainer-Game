@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://r4.wallpaperflare.com/wallpaper/700/817/241/soldiers-ghost-activision-infinity-ward-wallpaper-f4fdd97af95f6434fa44e3ee5e1c6279.jpg);
+    background-color: #ff0000;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    color: #ff0000;
+}
+
+#game-area {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #3c0000;
+    margin: 20px auto;
+    overflow: hidden;
+    background: url(https://img.freepik.com/free-vector/realistic-carbon-fiber-texture-3d-background_1017-33439.jpg?semt=ais_hybrid);
+    background-color: #ff0000;
+}
+
+#box {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+.score {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c2c2c;
+}
+
+#timer, #highscore {
+    font-size: 18px;
+    color: #ff0000;
+    margin-top: 10px;
+}
