@@ -9,15 +9,16 @@ const highscoreElement = document.getElementById('highscore');
 let score = 0;
 let gameInterval;
 let timerInterval;
-let timeLeft = 10; // Set the timer to 10 seconds
-let highScore = localStorage.getItem('highscore') || 0; // Retrieve high score from localStorage
+let timeLeft = 10; 
+let highScore = localStorage.getItem('highscore') || 0; 
+
+timerElement.textContent = timeLeft;
 
 highscoreElement.textContent = highScore;
 
-// Function to start the game
 function startGame() {
     score = 0;
-    timeLeft = 10; // Reset the timer to 10 seconds
+    timeLeft = 10;
     scoreElement.textContent = score;
     timerElement.textContent = timeLeft;
     moveBox();
@@ -39,14 +40,13 @@ function moveBox() {
     box.style.top = `${randomY}px`;
 }
 
-// Function to update score
 box.addEventListener('click', () => {
     score++;
     scoreElement.textContent = score;
     if (score > highScore) {
         highScore = score;
         highscoreElement.textContent = highScore;
-        localStorage.setItem('highscore', highScore); // Save high score in localStorage
+        localStorage.setItem('highscore', highScore); 
     }
 });
 
