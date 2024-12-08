@@ -72,3 +72,43 @@ button:hover {
     color: #ff0000;
     margin-top: 10px;
 }
+/* New styles for level buttons */
+.level-buttons {
+    margin: 20px 0;
+}
+
+.level-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.level-btn:hover {
+    background-color: #2c2c2c;
+}
+/* Control buttons style */
+.control-buttons {
+    margin: 20px 0;
+}
+
+.control-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.control-buttons button:hover {
+    background-color: #2c2c2c;
+}
+
+
