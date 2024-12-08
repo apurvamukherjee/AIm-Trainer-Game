@@ -12,7 +12,6 @@
         <p>Score by clicking the moving box!</p>
 
         <p id="timer">Time: <span id="time-left">120</span> seconds</p>
-
         <p>High Score: <span id="highscore">0</span></p>
 
         <div id="game-area">
@@ -20,8 +19,18 @@
         </div>
 
         <p class="score">Score: <span id="score">0</span></p>
-        <button id="start-btn">Start Game</button>
-        <button id="restart-btn" disabled>Restart Game</button>
+        
+        <div class="level-buttons">
+            <button id="level-1-btn" class="level-btn">Level 1</button>
+            <button id="level-2-btn" class="level-btn">Level 2</button>
+            <button id="level-3-btn" class="level-btn">Level 3</button>
+        </div>
+
+        <div class="control-buttons">
+            <button id="start-btn">Start Game</button>
+            <button id="pause-btn" disabled>Pause Game</button>
+            <button id="restart-btn" disabled>Restart Game</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
